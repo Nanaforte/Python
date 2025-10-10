@@ -1,10 +1,13 @@
 #Exercicio1: Converter Segundos em Horas, Minutos e Segundos
 #Enunciado: Desenvolva um programa que assuma uma entrada em segundos e a converta para horas, minutos e segundos
 
-total_segundos = int(input("Insira segundos: "))
+SegundosInseridos = int(input("Insira segundos: "))
 
-horas = total_segundos / 3600
+horas = SegundosInseridos // 3600          # // --> divisão inteira
+resto = SegundosInseridos % 3600           #fazer o resto porque depois de calcular as horas vamos calcular os minutos c o que sobra
+minutos = resto // 60
+segundos = resto % 60
 
-minutos = total_segundos 
+#print(f"Horas: {horas}, Minutos: {minutos}, Segundos: {segundos}")
 
-print("Horas: {horas}, Minutos: {}, Segundos: {}")
+print(f"{horas}h  {minutos}m  {segundos}s")
