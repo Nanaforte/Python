@@ -1,8 +1,13 @@
-#Pedra -> tesoura
-#Papel -> Pedra
-#Tesoura -> Papel
-#os.system('cls')
+'''
+(pedra,tesoura) | tesoura - papel or papel - pedra 
+jgr 1 vence
 
+tesoura - pedra or papel - tesoura or pedra - papel
+jgr 2 vence
+
+tesoura - tesoura or papel - papel or pedra - pedra 
+empate
+'''
 
 import os
 
