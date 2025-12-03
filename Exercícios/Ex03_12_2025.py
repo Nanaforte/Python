@@ -21,9 +21,10 @@ match (num>0, num==0, num<0):
         case (True,False,False):
             if num %3 == 0 and num %5 == 0:
                 print("divisivel por 3 e 5")
-            elif num % 2 == 0:
+            if num % 2 == 0:
                 print("positivo e par")
-            elif num % 2 != 0:
+            if num % 2 != 0:
                 print("positivo e ímpar")
             else:
                 print("outros numeros positivos")
+    
